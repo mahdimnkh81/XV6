@@ -3,7 +3,7 @@
 #include "user/user.h"
 
 int main() {
-    uint64 free = freemem();
+    uint64 free = kfreememfunc();
     uint64 all = PHYSTOP - KERNBASE;
     printf("free memory: %d bytes.\n", free);
     printf("used memory: %d bytes.\n", all - free);

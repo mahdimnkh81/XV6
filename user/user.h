@@ -22,7 +22,7 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
-uint64 freemem(void);
+uint64 kfreememfunc(void);
 
 // ulib.c
 int stat(const char*, struct stat*);

@@ -9,7 +9,7 @@
 extern struct proc proc[NPROC];
 
 uint64
-sys_freemem(void)
+sys_kfreememfunc(void)
 {
   uint64 used = 0;
   struct proc *p;
