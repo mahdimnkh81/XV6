@@ -26,6 +26,6 @@ sys_kfreememfunc(void)
     release(&p->lock);
   }
 
-  return (PHYSTOP - KERNBASE) - used;
+  return (128*1024*1024) - used;
   
 }

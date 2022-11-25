@@ -4,10 +4,8 @@
 
 int main() {
     uint64 free = kfreememfunc();
-    uint64 all = PHYSTOP - KERNBASE;
-    printf("free memory: %d bytes.\n", free);
-    printf("used memory: %d bytes.\n", all - free);
-    printf("all memory: %d bytes.\n", all);
-    printf("all memory: %d ",free);
+    uint64 all = PHYSTOP - KERNBASE;//128*1024*1024
+    printf("free memory: %d .\n", free);
+    printf("all memory: %d .\n", all); 
     exit(0);
 }
